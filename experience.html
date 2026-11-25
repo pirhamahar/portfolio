@@ -9,20 +9,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-  <div id="loader"><div class="logo gradient-text">PM.</div></div>
-  <div id="progress"></div>
-  <div id="cursor-glow"></div>
+<body id="top">
 
   <header>
     <div class="container nav">
       <a href="index.html" class="logo gradient-text">PM.</a>
-      <button class="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
+        <a class="active" href="experience.html">Experience</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -41,7 +38,7 @@
   <section style="padding-top:40px">
     <div class="container">
       <div class="timeline">
-        <div class="t-item reveal">
+        <div class="t-item">
           <span class="t-date">2022 - Present</span>
           <div class="card">
             <h3>BS Software Engineering</h3>
@@ -49,15 +46,15 @@
             <p>Currently in the 5th semester. Studying programming, databases, operating systems and web engineering.</p>
           </div>
         </div>
-        <div class="t-item reveal">
+        <div class="t-item">
           <span class="t-date">Semester 5</span>
           <div class="card">
             <h3>Web Engineering Course</h3>
             <h4>Academic Experience</h4>
-            <p>Learned HTML, CSS and JavaScript and built this portfolio as the lab assignment.</p>
+            <p>Learned HTML and CSS and built this portfolio as the lab assignment.</p>
           </div>
         </div>
-        <div class="t-item reveal">
+        <div class="t-item">
           <span class="t-date">Semesters 1 - 4</span>
           <div class="card">
             <h3>Semester Projects</h3>
@@ -65,7 +62,7 @@
             <p>Built small projects in C++, Java, Python and SQL, like a result system and a library database.</p>
           </div>
         </div>
-        <div class="t-item reveal">
+        <div class="t-item">
           <span class="t-date">2025</span>
           <div class="card">
             <h3>Volunteer, University Event</h3>
@@ -73,7 +70,7 @@
             <p>Helped the team to organize a technical event: registration desk, guiding participants and teamwork.</p>
           </div>
         </div>
-        <div class="t-item reveal">
+        <div class="t-item">
           <span class="t-date">2024</span>
           <div class="card">
             <h3>Git &amp; GitHub Workshop</h3>
@@ -81,7 +78,7 @@
             <p>Learned version control basics: commit, push, branch and how to share code on GitHub.</p>
           </div>
         </div>
-        <div class="t-item reveal">
+        <div class="t-item">
           <span class="t-date">2020 - 2022</span>
           <div class="card">
             <h3>Intermediate (Computer Science / Pre Engineering)</h3>
@@ -95,7 +92,7 @@
 
   <!-- CERTIFICATIONS -->
   <section>
-    <div class="container reveal">
+    <div class="container">
       <div class="section-title">
         <h2>Learning &amp; <span class="gradient-text">Certificates</span></h2>
         <p>Extra courses to keep improving</p>
@@ -103,7 +100,7 @@
       </div>
       <!-- TODO: Replace with certificates you really have -->
       <div class="grid-3">
-        <div class="card"><div class="icon-box"><i class="fa-solid fa-certificate"></i></div><h3>Web Development Basics</h3><p>Online course covering HTML, CSS and JavaScript fundamentals.</p></div>
+        <div class="card"><div class="icon-box"><i class="fa-solid fa-certificate"></i></div><h3>Web Development Basics</h3><p>Online course covering HTML and CSS fundamentals.</p></div>
         <div class="card"><div class="icon-box"><i class="fa-solid fa-certificate"></i></div><h3>SQL for Beginners</h3><p>Online course on SELECT, JOIN and database design.</p></div>
         <div class="card"><div class="icon-box"><i class="fa-solid fa-certificate"></i></div><h3>Git &amp; GitHub</h3><p>Workshop certificate for version control basics.</p></div>
       </div>
@@ -138,11 +135,10 @@
           <p><i class="fa-solid fa-envelope"></i> pirhamahar066@gmail.com</p>
         </div>
       </div>
-      <div class="footer-bottom">&copy; 2026 Pirha Mahar. Built with HTML, CSS &amp; JavaScript.</div>
+      <div class="footer-bottom">&copy; 2026 Pirha Mahar. Built with HTML &amp; CSS.</div>
     </div>
   </footer>
 
-  <button id="top-btn" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-  <script src="js/main.js"></script>
+  <a id="top-btn" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
 </body>
 </html>
