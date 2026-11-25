@@ -1,8 +1,3 @@
-/* =====================================================
-   Portfolio of Pirha Mahar - main.js
-   One file for all pages. Every feature first checks that its
-   HTML element exists, so the same file works on every page.
-   ===================================================== */
 
 /* ---------- 1. PAGE LOADER ---------- */
 window.addEventListener('load', function () {
@@ -123,10 +118,8 @@ var counterObserver = new IntersectionObserver(function (entries) {
 }, { threshold: 0.5 });
 counters.forEach(function (c) { counterObserver.observe(c); });
 
-/* ---------- 9. PROJECTS DATA ----------
-   All projects are stored in an array of objects. We loop over this
-   array with forEach to build the cards, so adding a project means
-   adding one object here. These are student level mock projects. */
+ /* ---------- 9. PROJECTS DATA ----------*/
+
 var projects = [
   {
     title: 'Student Result Management System',
@@ -202,9 +195,7 @@ var projects = [
   }
 ];
 
-/* ---------- 10. SHOW PROJECTS ----------
-   Used by the full projects page (#project-grid) and by the home
-   page, where data-limit="3" shows only 3 featured projects. */
+/* ---------- 10. SHOW PROJECTS ---------- */
 var grid = document.querySelector('#project-grid');
 var modal = document.querySelector('#modal');
 
@@ -277,9 +268,7 @@ if (grid) {
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeModal(); } });
 }
 
-/* ---------- 11. CONTACT FORM VALIDATION ----------
-   There is no backend, so we only check the fields and show a
-   success message. */
+/* ---------- 11. CONTACT FORM VALIDATION ---------- */
 var form = document.querySelector('#contact-form');
 if (form) {
   form.addEventListener('submit', function (e) {
